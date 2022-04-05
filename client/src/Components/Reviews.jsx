@@ -16,9 +16,10 @@ const Reviews = () => {
         {/* {JSON.stringify(reviews)} */}
         <div className='row'>
             {
-                reviews.map((review) => {
+                // update idx for object key in each div 04042022
+                reviews.map((review, idx) => {
                     return (
-                        <div className='row col-9 rounded-pill m-5' style={{ backgroundColor: "orange" }}>
+                        <div className='row col-9 rounded-pill m-5' style={{ backgroundColor: "orange" }} key={idx}>
                             <div className='d-flex justify-content-start mx-5'>
                                 <p className='mx-5'>Name: {review.name}</p>
                                 <p>Date: {review.createdAt.slice(0,10)}</p>
