@@ -47,8 +47,8 @@ const ReviewForm = () => {
       </p>
       <p className='form-group'>
         <label for="img">Upload Image</label>
-        <FileBase64 className="form-control-file" type="file" multiple={false} onDone={({ base64 }) => {
-          // console.log(base64)
+        <FileBase64 className="form-control-file" type="file" multiple={true} onDone={({ base64 }) => {
+          console.log(base64)
           setReview({ ...review, image: base64 })
         }} />
         {
