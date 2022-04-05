@@ -21,7 +21,7 @@ const ReviewForm = () => {
 
     axios.post("http://localhost:8000/api/reviews", review)
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         history.push("/reviews")
       })
       .catch(err => {
@@ -48,7 +48,7 @@ const ReviewForm = () => {
       <p className='form-group'>
         <label for="img">Upload Image</label>
         <FileBase64 className="form-control-file" type="file" multiple={false} onDone={({ base64 }) => {
-          console.log(base64)
+          // console.log(base64)
           setReview({ ...review, image: base64 })
         }} />
         {
