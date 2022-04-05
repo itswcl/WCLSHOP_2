@@ -2,7 +2,7 @@ import React from 'react';
 // 3. import useLocation 02042022
 import { useLocation } from 'react-router-dom'
 
-const Detail = (props) => {
+const Detail = () => {
     // 3. use useLocation to get the product object 02042022
     const location = useLocation();
     // 4. get product by location.state./obj key/ 02042022
